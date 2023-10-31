@@ -20,25 +20,12 @@ class MeasurementType extends AbstractType
                 'html5' => true,
             ])
             ->add('celsius', NumberType::class, [
-                'attr' => [
-                    'min' => -20,
-                    'max' => 40,
-                ],
-                'html5' => true,
             ])
             ->add('wind', NumberType::class, [
-                'attr' => [
-                    'min' => 0,
-                    'max' => 410,
-                ],
                 'scale' => 2,
                 'html5' => true,
             ])
             ->add('humidity', NumberType::class, [
-                'attr' => [
-                    'min' => 40,
-                    'max' => 65,
-                ],
                 'scale' => 2,
                 'html5' => true,
             ])

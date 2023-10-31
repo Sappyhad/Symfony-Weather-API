@@ -1,5 +1,7 @@
 <?php
 
+
+
 namespace App\Form;
 
 use App\Entity\Location;
@@ -33,18 +35,10 @@ class LocationType extends AbstractType
             ->add('latitude', NumberType::class, [
                 'scale' => 7,
                 'html5' => true,
-                'attr' => array(
-                    'min' => '-90',
-                    'max' => '90',
-                )
             ])
             ->add('longitude', NumberType::class, [
                 'scale' => 7,
                 'html5' => true,
-                'attr' => array(
-                    'min' => '-180',
-                    'max' => '180',
-                )
             ])
         ;
     }
